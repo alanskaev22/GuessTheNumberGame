@@ -1,0 +1,104 @@
+# Allure report
+.allure/*
+.allure
+allure-results/
+
+.settings/
+.classpath
+.project
+
+# IntelliJ #
+############
+*.iml
+*.ipr
+*.iws
+.idea
+.idea/
+.idea/*
+.idea_modules/
+
+# Other IDE's#
+##############
+\.classpath
+\.project
+\.settings
+\.dorsync
+/nbactions.xml
+.factorypath
+bin/
+.settings/*
+
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.nar
+*.ear
+*.tar.gz
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.config
+.metadata/
+
+# Maven #
+#########
+**/target/*
+target
+target/
+build/
+test-output/
+out/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.flattened-pom.xml
+###############################
+
+
+### Intellij Patch ###
+# Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+
+# *.iml
+# modules.xml
+# *.ipr
+
+
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# End of https://www.gitignore.io/api/java,gradle,intellij
+/.apt_generated/
+
+
+
