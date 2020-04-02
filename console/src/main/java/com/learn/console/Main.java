@@ -1,5 +1,8 @@
-package com.learn;
+package com.learn.console;
 
+import com.learn.AppConfig;
+import com.learn.MessageGenerator;
+import com.learn.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
