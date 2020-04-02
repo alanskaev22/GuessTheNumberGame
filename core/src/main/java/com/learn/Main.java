@@ -18,7 +18,7 @@ public class Main {
       ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
       // get number generator bean from context
-      NumberGenerator numberGenerator = context.getBean("numberGenerator", NumberGenerator.class);
+      NumberGenerator numberGenerator = context.getBean(NumberGenerator.class);
 
       // call method next() to get random num
       int number = numberGenerator.next();
@@ -27,7 +27,7 @@ public class Main {
       log.info("Number is: {}", number);
 
       // get game bean from context
-      Game game = context.getBean("game", Game.class);
+      Game game = context.getBean(Game.class);
 
       // close context
       context.close();
