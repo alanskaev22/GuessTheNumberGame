@@ -25,12 +25,30 @@ public class MessageGeneratorImpl implements MessageGenerator {
     // == methods ==
     @Override
     public String getMainMessage() {
-        return "getmainMessage() Method";
+        return "Number is between: "
+                +game.getSmallest()
+                +" and "
+                +game.getBiggest()
+                +". Can you guess it?";
     }
 
     @Override
     public String getResultMessage() {
-        return "getResultMessage() Method";
+        if(game.isGameWon()){
+            return "You guessed it! The number was: "+game.getNumber();
+        }else if (game.isGameLost()){
+            return "You lost! The number was: "+game.getNumber();
+        }else if(!game.isValidNumberRange()){
+            return "Invalid number range";
+        }else if(game.getRemainingGuesses() == guessCount){
+            return "What is the first guess?";
+        }else {
+            String direction = "Lower";
+            if(game.getGuess() < game.getNumber()){
+                direction = "Higher";
+            }
+                return direction+"! You have "+game.getRemainingGuesses()+" guesses left!";
+        }
     }
 
 }
