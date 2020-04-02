@@ -1,6 +1,6 @@
 package com.learn.console;
 
-import com.learn.AppConfig;
+import com.learn.config.AppConfig;
 import com.learn.MessageGenerator;
 import com.learn.NumberGenerator;
 import org.slf4j.Logger;
