@@ -7,4 +7,9 @@
 
     <bean id="numberGenerator" class="com.learn.NumberGeneratorImpl"/>
 
+    <bean id="game" class="com.learn.GameImpl">
+            <property name="numberGenerator" ref="numberGenerator" />
+            </bean>
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
 </beans>
