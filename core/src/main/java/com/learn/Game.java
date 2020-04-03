@@ -8,13 +8,13 @@ public interface Game {
 
     void setGuess(int guess);
 
+    int getGuessCount();
+
     int getSmallest();
 
     int getBiggest();
 
     int getRemainingGuesses();
-
-    int getGuessCount();
 
     void reset();
 
