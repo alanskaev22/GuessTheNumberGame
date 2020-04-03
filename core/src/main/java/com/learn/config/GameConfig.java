@@ -5,12 +5,11 @@ import com.learn.annotations.GuessCount;
 import com.learn.annotations.MaxNumber;
 import com.learn.annotations.MinNumber;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 
 @Configuration
 @PropertySource("classpath:config/game.properties")
+@ComponentScan(basePackages = "com.learn")
 public class GameConfig {
 
     // == fields ==
