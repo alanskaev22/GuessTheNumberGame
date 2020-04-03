@@ -3,12 +3,19 @@ _and upper boundaries of input range (in config.properties), and user_
 _providing input via console at runtime. You can customize how many_
 _guesses you can take via properties file._
 
-_**Run Main method inside console module to start the game.**_
 
+* Specify minnimum number, maximum number and guess count in config.properties.
+* Run Main method inside console module
+* Enter number using console
+* Get feedback regarding how many tries you have and how close you are 
+    to the actual number
+* Replay the game after you exhaust specified number of guesses by sending Y/N
+
+*****
 
 # High level overview
 * **Maven**
 * **Spring dependency injection**
 * **Lombok**
 * **Slf4j & logback**
-* **more to come...**
+*****
