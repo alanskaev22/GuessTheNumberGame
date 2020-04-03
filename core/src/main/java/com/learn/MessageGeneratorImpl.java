@@ -14,7 +14,7 @@ public class MessageGeneratorImpl implements MessageGenerator {
     private static final Logger log = LoggerFactory.getLogger(MessageGeneratorImpl.class);
 
     // == fields ==
-    private Game game;
+    private final Game game;
 
     @Autowired
     public MessageGeneratorImpl(Game game) {

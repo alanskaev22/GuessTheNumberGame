@@ -13,9 +13,7 @@ import java.util.Random;
       // == fields ==
       private final Random random = new Random();
 
-
-
-        private final int maxNumber;
+      private final int maxNumber;
       private final int minNumber;
 
       // == constructor ==
