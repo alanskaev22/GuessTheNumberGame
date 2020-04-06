@@ -15,7 +15,15 @@ _guesses you can take via properties file._
 
 # High level overview
 * **Maven**
+* **Spring Boot**
 * **Spring dependency injection**
 * **Lombok**
 * **Slf4j & logback**
 *****
+
+Run WebMain class inside Web module to create a server on port 8080
+
+For English Version:
+http://localhost:8080/?lang=en
+For Spanish Version:
+http://localhost:8080/?lang=es
