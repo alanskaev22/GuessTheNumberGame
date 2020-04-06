@@ -1,0 +1,7 @@
+<thlogic>
+    <attr sel="#head" th:replace="~{fragments/head :: headFragment}" />
+    <attr sel="#mainMessage" th:text="${__${T(com.learn.util.AttributeNames).MAIN_MESSAGE}__}"/>
+    <attr sel="#resultMessage" th:text="${__${T(com.learn.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#gameForm" th:action="@{__${T(com.learn.util.Mappings).PLAY}__}"/>
+    <attr sel="#footerId" th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>
