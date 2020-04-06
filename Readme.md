@@ -1,29 +1,42 @@
+# Guess The Number Game
+
+This game can be played in **Console** version, as well as **Web** version.
+*****
 _Simple game "Guess the number" that works by specifying lower_ 
-_and upper boundaries of input range (in config.properties), and user_ 
-_providing input via console at runtime. You can customize how many_
-_guesses you can take via properties file._
+_and upper boundaries of input range (in game.properties, inside core module), and user_ 
+_providing a guess that has to be between the numbers specified in properties file._
+_Number of guesses can be customized via game.properties file inside core module._
 
-
-* Specify minnimum number, maximum number and guess count in config.properties.
-* Run Main method inside console module
-* Enter number using console
-* Get feedback regarding how many tries you have and how close you are 
-    to the actual number
-* Replay the game after you exhaust specified number of guesses by sending Y/N
-
+_Default values are set to: Range -> 0 to 100. Number of guesses -> 5._
 *****
 
-# High level overview
-* **Maven**
+## How to run
+
+To run **Console version** of the game, run Main class inside Console module.
+To run **Web version** of the game, run WebMain class inside Web module.
+Web version of the game is available in two languages, English & Spanish which
+was achieved by internationalization.
+
+English version of the game will be created on port 8080:
+
+`http://localhost:8080/?lang=en`
+
+Spanish Version of the game:
+
+`http://localhost:8080/?lang=es`
+*****
+
+## High level overview
+* **Java 11**
+* **Multi-module Maven project**
 * **Spring Boot**
-* **Spring dependency injection**
+* **Thymeleaf**
+* **Dependency Injection**
 * **Lombok**
 * **Slf4j & logback**
+
+Lombok must be installed from marketplace
 *****
 
-Run WebMain class inside Web module to create a server on port 8080
 
-For English Version:
-http://localhost:8080/?lang=en
-For Spanish Version:
-http://localhost:8080/?lang=es
+
