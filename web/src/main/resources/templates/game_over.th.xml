@@ -1,0 +1,12 @@
+<thlogic>
+    <attr sel="#head" th:replace="~{fragments/head :: headFragment}"/>
+    <attr sel="#resultMessage" th:text="${__${T(com.learn.util.AttributeNames).RESULT_MESSAGE}__}"/>
+    <attr sel="#restart" th:href="@{__${T(com.learn.util.Mappings).RESTART}__}"/>
+    <attr sel="#restart" th:text="#{game.restart}"/>
+    <attr sel="#home" th:href="@{__${T(com.learn.util.Mappings).HOME}__}"/>
+    <attr sel="#home" th:text="#{game.home}"/>
+    <attr sel="#footer" th:replace="~{fragments/footer :: footerFragment}"/>
+    <attr sel="#guessTitle" th:text="#{game.guessTitle}"/>
+    <attr sel="#guessTitle2" th:text="#{game.guessTitle2}"/>
+
+</thlogic>

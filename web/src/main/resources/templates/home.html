@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: headFragment}">
+<html lang="en">
+<head id="head">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <div align="center">
 
-        <h1>Guess the number game</h1>
-        <h2><a th:href="@{__${T(com.learn.util.Mappings).PLAY}__}" th:text="Play" href="play.html">Click to play</a></h2>
-    <footer th:replace="~{fragments/footer :: footerFragment}">
+        <h1 id="welcomeGame">Welcome to the guess the number game</h1>
+        <h2><a id="play" href="play.html">Click to play</a></h2>
+    <footer id="footer">
 
     </footer>
 </div>
